@@ -58,7 +58,7 @@ function removeFromCart(item) {
 }
 
 total();
-console.log(totalPrice);
+console.log(total());
 
 function placeOrder(cardNumber) {
   if (!cardNumber) {
