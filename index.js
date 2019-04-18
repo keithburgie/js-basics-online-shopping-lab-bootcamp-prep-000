@@ -1,4 +1,5 @@
 var cart = [];
+var total;
 
 function getCart() {
  return cart;
@@ -61,7 +62,7 @@ function placeOrder(cardNumber) {
   if (!cardNumber) {
     return `Sorry, we don't have a credit card on file for you.`;
   } else {
-    let total = total;
+    total = total();
     cart = [];
     console.log(`Your total cost is ${total}, which will be charged to the card ${cardNumber}.`);
     return `Your total cost is ${total}, which will be charged to the card ${cardNumber}.`;
